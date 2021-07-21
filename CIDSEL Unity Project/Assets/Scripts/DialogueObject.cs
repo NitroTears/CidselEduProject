@@ -8,8 +8,8 @@ public class DialogueObject
     public string[] names;
     
     [TextArea(3,10)]
-    public string[] sentences; 
-    
-    //public Tuple<string, string> dialogueBundle;
+    public string[] sentences;
+
+    public float[] timestamps;
 
 }
