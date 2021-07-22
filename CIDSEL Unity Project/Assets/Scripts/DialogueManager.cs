@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,11 +15,14 @@ public class DialogueManager : MonoBehaviour
     private bool ButtonJustPressed = false;
     private bool directorIsPlaying = false;
     private float ButtonDelayTime;
-    //private TimelineAsset timeline;
     private PlayableDirector director;
+    public TimelineAsset choiceATimeline;
+    public TimelineAsset ChoiceBTimeline;
     public Text charNameText;
     public Text dialogueText;
-    private float currentStamp;
+    public Text choiceAText;
+    public Text choiceBText;
+
 
     // Start is called before the first frame update
     void Start()
@@ -47,9 +51,13 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void StartDialogue(DialogueObject dialogue)
+    public void StartDialogue(DialogueObject dialogue, TimelineAsset timeline)
     {
         Debug.Log("StartDialogue called.");
+        director.Stop();
+        director.playableAsset = timeline;
+        director.RebuildGraph();
+        director.time = 0.0;
         names.Clear();
         sentences.Clear();
         pauseStamps.Clear();
@@ -71,29 +79,42 @@ public class DialogueManager : MonoBehaviour
         
     }
 
-    public void DisplayNextSentence(bool firstLine)
+    public void DisplayNextSentence(bool isfirstLine)
     {
-        if (firstLine)
-        {
-            PlayTimeline();
-        }
-        else
-        {
-            ResumeTimeline();
-        }
-        Debug.Log("DisplayNextSentence called - " + sentences.Count + " sentences ready");
         if (sentences.Count == 0)
         {
             EndDialogue();
-            return;
         }
-        string name = names.Dequeue();
-        string sentence = sentences.Dequeue();
-        float timestamp = pauseStamps.Dequeue();
-        charNameText.text = name;
-        dialogueText.text = sentence;
-        Invoke("PauseTimeline", timestamp);
-        Debug.Log(timestamp);
+        else
+        {
+            string name = names.Dequeue();
+            string sentence = sentences.Dequeue();
+            float timestamp = pauseStamps.Dequeue();
+            if (isfirstLine)
+            {
+                PlayTimeline();
+            }
+            else
+            {
+                ResumeTimeline();
+            }
+            Debug.Log("DisplayNextSentence called - " + sentences.Count + " sentences ready");
+            charNameText.text = name;
+            dialogueText.text = sentence;
+            Invoke("PauseTimeline", timestamp);
+            Debug.Log(timestamp);
+            if (names.Peek().Equals("<CHOICE>"))
+            {
+                //EndDialogue();
+                string[] choiceTexts = sentences.Peek().Split('^');
+                choiceAText.text = choiceTexts[0];
+                choiceBText.text = choiceTexts[1];
+                Debug.Log("Split strings into: " + choiceTexts[0] + " ||| " + choiceTexts[1]);
+                names.Dequeue();
+                sentences.Dequeue();
+                pauseStamps.Dequeue();
+            }
+        }
     }
     void EndDialogue()
     {
@@ -114,7 +135,8 @@ public class DialogueManager : MonoBehaviour
             ButtonJustPressed = false;
         }
     }
-
+    
+    #region Timeline Controls
     void PlayTimeline()
     {
         Debug.Log("Timeline started!");
@@ -135,6 +157,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Timeline Paused!");
         directorIsPlaying = false;
     }
+    #endregion
 }
 
 
