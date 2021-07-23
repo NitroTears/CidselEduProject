@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -28,9 +29,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         //initialise Queue objects and director.
-        sentences = new Queue<string>();
-        names = new Queue<string>();
-        pauseStamps = new Queue<float>();
+
         director = GetComponent<PlayableDirector>();
         if (!director)
         {
@@ -54,6 +53,9 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(DialogueObject dialogue, TimelineAsset timeline)
     {
         Debug.Log("StartDialogue called.");
+        sentences = new Queue<string>();
+        names = new Queue<string>();
+        pauseStamps = new Queue<float>();
         director.Stop();
         director.playableAsset = timeline;
         director.RebuildGraph();
@@ -84,6 +86,7 @@ public class DialogueManager : MonoBehaviour
         if (sentences.Count == 0)
         {
             EndDialogue();
+            EndScene();
         }
         else
         {
@@ -113,6 +116,7 @@ public class DialogueManager : MonoBehaviour
                 names.Dequeue();
                 sentences.Dequeue();
                 pauseStamps.Dequeue();
+                Invoke("EndDialogue", timestamp);
             }
         }
     }
@@ -136,6 +140,13 @@ public class DialogueManager : MonoBehaviour
         }
     }
     
+    public void EndScene()
+    {
+        SceneManager.LoadScene("Map_Navigation_scene");
+        Debug.Log("Went back to map!");
+        EndDialogue();
+    }
+
     #region Timeline Controls
     void PlayTimeline()
     {

@@ -354,7 +354,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455891756}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.82, y: -1.65, z: -1}
   m_LocalScale: {x: 0.2949, y: 0.2949, z: 0.2949}
   m_Children: []
@@ -518,6 +518,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8540657391958650878, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540657391958650878, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540657391958650878, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 845152237}
+    - target: {fileID: 8540657391958650878, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540657391958650878, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540657391958650878, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540657391958650878, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
 --- !u!224 &787314442 stripped
@@ -530,6 +558,35 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2345654026324826582, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
   m_PrefabInstance: {fileID: 787314441}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &845152237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845152236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a15b59247511142abab9efc6d98ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Snake
+    - Joey
+    - Snake
+    - Snake
+    sentences:
+    - "Come on, it\u2019s not every day you get to see one."
+    - No, I'm not going with you
+    - Fine then, but you are the one missing out.
+    - Fine then, but you are the one missing out.
+    timestamps:
+    - 0.1666
+    - 0
+    - 1.8334
+    - 2
+  cutsceneTimeline: {fileID: 11400000, guid: db409016df1ec984b9c469cf705ede8b, type: 2}
 --- !u!95 &845152240
 Animator:
   serializedVersion: 3
@@ -573,6 +630,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &866841123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866841121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a15b59247511142abab9efc6d98ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Snake
+    - 
+    - 
+    - 
+    sentences:
+    - "Come on, it\u2019s not every day you get to see one."
+    - 
+    - 
+    - 
+    timestamps:
+    - 0
+    - 0
+    - 0
+    - 0
+  cutsceneTimeline: {fileID: 0}
 --- !u!1 &936103772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,7 +1111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356046552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.94, y: -2.53, z: 0}
+  m_LocalPosition: {x: -10.94, y: -2.53, z: -1}
   m_LocalScale: {x: 0.4165, y: 0.4165, z: 0.4165}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1096,7 +1182,7 @@ MonoBehaviour:
     sentences:
     - Hey Kid! Come over here for a second!
     - 'You know about Tasmanian Devils right? They are quite rare. '
-    - Have you ever ssseen one right before you?
+    - Have you ever seen one right before you?
     - "No, I haven\u2019t."
     - Well I happen to know where one is.
     - Really? Where?
@@ -1217,6 +1303,7 @@ GameObject:
   - component: {fileID: 1457276884}
   - component: {fileID: 1457276883}
   - component: {fileID: 1457276882}
+  - component: {fileID: 1457276885}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -1233,7 +1320,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1457276881}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: acf4b42f470d517438607b241d2e82c0, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: db409016df1ec984b9c469cf705ede8b, type: 2}
   m_InitialState: 0
   m_WrapMode: 0
   m_DirectorUpdateMode: 1
@@ -1257,6 +1344,44 @@ PlayableDirector:
     value: {fileID: 866841122}
   - key: {fileID: -1520331654632331133, guid: acf4b42f470d517438607b241d2e82c0, type: 2}
     value: {fileID: 845152240}
+  - key: {fileID: -5358301141371027309, guid: 7c71e3220329f49488870788ca6266ec, type: 2}
+    value: {fileID: 455891757}
+  - key: {fileID: 91495707961039049, guid: 7c71e3220329f49488870788ca6266ec, type: 2}
+    value: {fileID: 455891757}
+  - key: {fileID: -6150612432181644197, guid: 7c71e3220329f49488870788ca6266ec, type: 2}
+    value: {fileID: 455891760}
+  - key: {fileID: -4808257908046236412, guid: 7c71e3220329f49488870788ca6266ec, type: 2}
+    value: {fileID: 1356046554}
+  - key: {fileID: -3176851634725899746, guid: 7c71e3220329f49488870788ca6266ec, type: 2}
+    value: {fileID: 1356046554}
+  - key: {fileID: -5453588022037740794, guid: 7c71e3220329f49488870788ca6266ec, type: 2}
+    value: {fileID: 1356046553}
+  - key: {fileID: -517960524913067931, guid: 7c71e3220329f49488870788ca6266ec, type: 2}
+    value: {fileID: 1075468472}
+  - key: {fileID: -7196110844350998299, guid: 7c71e3220329f49488870788ca6266ec, type: 2}
+    value: {fileID: 866841122}
+  - key: {fileID: -1520331654632331133, guid: 7c71e3220329f49488870788ca6266ec, type: 2}
+    value: {fileID: 845152240}
+  - key: {fileID: -5358301141371027309, guid: db409016df1ec984b9c469cf705ede8b, type: 2}
+    value: {fileID: 455891757}
+  - key: {fileID: 91495707961039049, guid: db409016df1ec984b9c469cf705ede8b, type: 2}
+    value: {fileID: 455891757}
+  - key: {fileID: -6150612432181644197, guid: db409016df1ec984b9c469cf705ede8b, type: 2}
+    value: {fileID: 455891760}
+  - key: {fileID: -4808257908046236412, guid: db409016df1ec984b9c469cf705ede8b, type: 2}
+    value: {fileID: 1356046554}
+  - key: {fileID: -3176851634725899746, guid: db409016df1ec984b9c469cf705ede8b, type: 2}
+    value: {fileID: 1356046554}
+  - key: {fileID: -5453588022037740794, guid: db409016df1ec984b9c469cf705ede8b, type: 2}
+    value: {fileID: 1356046553}
+  - key: {fileID: -517960524913067931, guid: db409016df1ec984b9c469cf705ede8b, type: 2}
+    value: {fileID: 1075468472}
+  - key: {fileID: -7196110844350998299, guid: db409016df1ec984b9c469cf705ede8b, type: 2}
+    value: {fileID: 866841122}
+  - key: {fileID: -1520331654632331133, guid: db409016df1ec984b9c469cf705ede8b, type: 2}
+    value: {fileID: 845152240}
+  - key: {fileID: -4099593953765473180, guid: db409016df1ec984b9c469cf705ede8b, type: 2}
+    value: {fileID: 1457276885}
   m_ExposedReferences:
     m_References:
     - e316c591d4d5b7840aaccbe6e7e6a5c7: {fileID: 455891756}
@@ -1292,6 +1417,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1457276885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457276881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 38dd735c124c51843b72c2a3486054ff, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1457276883}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: EndScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1547199671 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4806374747569832086, guid: 1d1792462068b44499cbe67cc7f921b8, type: 3}
