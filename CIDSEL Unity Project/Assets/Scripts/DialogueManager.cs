@@ -17,8 +17,8 @@ public class DialogueManager : MonoBehaviour
     private bool directorIsPlaying = false;
     private float ButtonDelayTime;
     private PlayableDirector director;
-    public TimelineAsset choiceATimeline;
-    public TimelineAsset ChoiceBTimeline;
+    //public TimelineAsset choiceATimeline;
+    //public TimelineAsset ChoiceBTimeline;
     public Text charNameText;
     public Text dialogueText;
     public Text choiceAText;
@@ -28,8 +28,9 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 60;
+        //QualitySettings.vSyncCount = 0;
+        //Application.targetFrameRate = 60;
+
         //initialise Queue objects and director.
 
         director = GetComponent<PlayableDirector>();
@@ -106,7 +107,7 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("DisplayNextSentence called - " + sentences.Count + " sentences ready");
             charNameText.text = name;
             dialogueText.text = sentence;
-            Invoke("PauseTimeline", timestamp);
+            Invoke("PauseTimeline", timestamp); //Waits for the timestamp (and by extension, the animation to play out) before pausing the timeline.
             Debug.Log(timestamp);
             if (names.Peek().Equals("<CHOICE>"))
             {
@@ -118,15 +119,23 @@ public class DialogueManager : MonoBehaviour
                 names.Dequeue();
                 sentences.Dequeue();
                 pauseStamps.Dequeue();
-                Invoke("EndDialogue", timestamp);
+                Invoke("EndDialogue", timestamp); //Waits for the timestamp (and by extension, the animation to play out) before stopping the dialogue.
             }
         }
     }
+
     void EndDialogue()
     {
         DialogueStarted = false;
         Debug.Log("End of conversation.");
         director.Stop();
+    }
+    
+    public void EndScene()
+    {
+        SceneManager.LoadScene("Map_Navigation_scene");
+        Debug.Log("Went back to map!");
+        EndDialogue();
     }
 
     void CheckDelay()
@@ -141,12 +150,10 @@ public class DialogueManager : MonoBehaviour
             ButtonJustPressed = false;
         }
     }
-    
-    public void EndScene()
+
+    public void SetIsBitten(bool isBitten)
     {
-        SceneManager.LoadScene("Map_Navigation_scene");
-        Debug.Log("Went back to map!");
-        EndDialogue();
+        PersistantData.isBitten = isBitten;
     }
 
     #region Timeline Controls
