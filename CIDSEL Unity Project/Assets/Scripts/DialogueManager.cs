@@ -28,6 +28,8 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 60;
         //initialise Queue objects and director.
 
         director = GetComponent<PlayableDirector>();
