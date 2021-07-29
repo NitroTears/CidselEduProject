@@ -97,11 +97,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4806374747569832086, guid: 1d1792462068b44499cbe67cc7f921b8, type: 3}
       propertyPath: m_Text
-      value: Choice B
+      value: Instrucitons
       objectReference: {fileID: 0}
     - target: {fileID: 9151034974739582911, guid: 1d1792462068b44499cbe67cc7f921b8, type: 3}
       propertyPath: m_Name
-      value: ChoiceB Variant
+      value: ChoiceB
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d1792462068b44499cbe67cc7f921b8, type: 3}
