@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene 1.unity
     guid: 94bb3d172af5d0c4fa7e3155a967004e
   - enabled: 1
-    path: Assets/Scenes/Map_Navigation_scene.unity
+    path: Assets/Scenes/map scenes/scene files/Map_Navigation_scene.unity
     guid: b97eacb9fbc281949a71632cf308fa1e
   m_configObjects: {}

@@ -555,7 +555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2951243820081838487, guid: 1d1792462068b44499cbe67cc7f921b8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Map_Navigation_scene
+      value: Map_1_Start_Home
       objectReference: {fileID: 0}
     - target: {fileID: 2951243820081838487, guid: 1d1792462068b44499cbe67cc7f921b8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
