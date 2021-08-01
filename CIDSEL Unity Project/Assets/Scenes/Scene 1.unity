@@ -1081,6 +1081,52 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1082940993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2566834377571783619, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+  m_PrefabInstance: {fileID: 2566834376871580690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1082940994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082940993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a15b59247511142abab9efc6d98ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Snake
+    - Snake
+    - Snake
+    - Joey
+    - Snake
+    - Joey
+    - Snake
+    - <CHOICE>
+    sentences:
+    - Hey Kid! Come over here for a second!
+    - 'You know about Tasmanian Devils right? They are quite rare. '
+    - Have you ever seen one right before you?
+    - "No, I haven\u2019t."
+    - Well I happen to know where one is.
+    - Really? Where?
+    - "It\u2019s a secret, but follow me and you can see it..."
+    - Follow Snake^Don't Follow
+    timestamps:
+    - 2.95
+    - 0.65
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0.3
+    - 0
+  cutsceneTimeline: {fileID: 11400000, guid: acf4b42f470d517438607b241d2e82c0, type: 2}
 --- !u!1 &1292749049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2204,6 +2250,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 455891756}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: trigger
+      value: 
+      objectReference: {fileID: 1082940994}
+    - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: choiceAText
       value: 
       objectReference: {fileID: 1547199671}
@@ -2211,6 +2261,14 @@ PrefabInstance:
       propertyPath: choiceBText
       value: 
       objectReference: {fileID: 2025095394}
+    - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: mapToWarpTo
+      value: Map_2_Start_Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: playTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: charNameText
       value: 
@@ -2318,7 +2376,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
   m_PrefabInstance: {fileID: 2566834376871580690}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1082940993}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64373d5665b0f42489eb31064903ab63, type: 3}

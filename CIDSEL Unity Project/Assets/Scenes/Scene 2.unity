@@ -506,6 +506,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 514366905}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: trigger
+      value: 
+      objectReference: {fileID: 98315198}
+    - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: choiceAText
       value: 
       objectReference: {fileID: 1912197543}
@@ -513,6 +517,14 @@ PrefabInstance:
       propertyPath: choiceBText
       value: 
       objectReference: {fileID: 1834529218}
+    - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: mapToWarpTo
+      value: Map_3_Start_bush
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: playTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: charNameText
       value: 
@@ -615,6 +627,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+--- !u!1 &98315197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2566834377571783619, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+  m_PrefabInstance: {fileID: 98315196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &98315198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98315197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a15b59247511142abab9efc6d98ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Zack
+    - Joey
+    - Zack
+    - Alex
+    - Nathan
+    - Jack
+    - <CHOICE>
+    sentences:
+    - Hey Joey! Check this out!
+    - What is it?
+    - Look at the new kid, check out the spikes on him!
+    - Don't get too close! You might get stabbed by 'Spiky' over here! Hahaha!
+    - Can you please leave me alone?
+    - What a loser, right Joey?
+    - Don't pick on him^Yeah he's a loser.
+    timestamps:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  cutsceneTimeline: {fileID: 11400000, guid: 4010b208e8dc4c847b62f0124694ae0f, type: 2}
 --- !u!1 &514366902
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,7 +980,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2566834377571783623, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
   m_PrefabInstance: {fileID: 98315196}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 98315197}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
@@ -936,7 +991,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
   m_PrefabInstance: {fileID: 98315196}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 98315197}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64373d5665b0f42489eb31064903ab63, type: 3}
@@ -1674,6 +1729,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4806374747569832086, guid: 1d1792462068b44499cbe67cc7f921b8, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806374747569832086, guid: 1d1792462068b44499cbe67cc7f921b8, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 9151034974739582911, guid: 1d1792462068b44499cbe67cc7f921b8, type: 3}
       propertyPath: m_Name
       value: ChoiceA
@@ -1854,6 +1917,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533901824}
     m_Modifications:
+    - target: {fileID: 2072151046503257855, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072151046503257855, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 2345654026324826582, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
       propertyPath: m_Name
       value: ChoiceB

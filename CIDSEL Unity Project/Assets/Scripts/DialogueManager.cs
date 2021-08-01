@@ -17,12 +17,15 @@ public class DialogueManager : MonoBehaviour
     private bool directorIsPlaying = false;
     private float ButtonDelayTime;
     private PlayableDirector director;
+    public bool playTrigger;
+    public DialogueTrigger trigger;
     //public TimelineAsset choiceATimeline;
     //public TimelineAsset ChoiceBTimeline;
     public Text charNameText;
     public Text dialogueText;
     public Text choiceAText;
     public Text choiceBText;
+    public string mapToWarpTo;
 
 
     // Start is called before the first frame update
@@ -39,6 +42,12 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("Director is Null!");
         }
         director.Stop();
+        if (trigger && playTrigger)
+        {
+            Debug.Log("Trigger!");
+            trigger.TriggerDialogue();
+        }
+
     }
 
     private void Update()
@@ -133,7 +142,7 @@ public class DialogueManager : MonoBehaviour
     
     public void EndScene()
     {
-        SceneManager.LoadScene("Map_Navigation_scene");
+        SceneManager.LoadScene(mapToWarpTo);
         Debug.Log("Went back to map!");
         EndDialogue();
     }
