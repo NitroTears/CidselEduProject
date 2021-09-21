@@ -24,9 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/map scenes/Map_3_Start_bush.unity
     guid: 4f7a84f0ce813ea43970a0469f50eba7
   - enabled: 1
-    path: Assets/Scenes/Scene 2.unity
-    guid: a5c7287879c2fbe4f9cd626419346809
-  - enabled: 1
-    path: Assets/Scenes/Scene 3.unity
-    guid: fc340942675de3e4c81e044969d54441
+    path: Assets/Scenes/Scene 4.unity
+    guid: d403912cabbc15a41b5c0b3914386384
   m_configObjects: {}

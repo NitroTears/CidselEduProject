@@ -75,7 +75,6 @@ public class DialogueManager : MonoBehaviour
         names.Clear();
         sentences.Clear();
         pauseStamps.Clear();
-
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
