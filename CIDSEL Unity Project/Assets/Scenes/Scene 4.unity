@@ -1054,7 +1054,7 @@ MonoBehaviour:
     - No idea. Come on, we should keep going.
     - No idea. Come on, we should keep going.
     timestamps:
-    - 0.25
+    - 0.3
     - 0
     - 0
     - 0.3
@@ -1127,7 +1127,7 @@ MonoBehaviour:
     timestamps:
     - 0.25
     - 0
-    - 0.3
+    - 0.33
   cutsceneTimeline: {fileID: 11400000, guid: 17d06890d88eea747bb0ba59f41140fe, type: 2}
 --- !u!1001 &938117198
 PrefabInstance:
