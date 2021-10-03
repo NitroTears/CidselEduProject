@@ -228,6 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 110329039}
   - component: {fileID: 110329038}
+  - component: {fileID: 110329040}
   m_Layer: 0
   m_Name: UncleKang
   m_TagString: Untagged
@@ -300,6 +301,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &110329040
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110329037}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &146835368 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 785073300747257035, guid: e37a296d2732b414495337fe1a093dc6, type: 3}
@@ -1314,7 +1334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955173143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.35, y: -2.76, z: 0}
+  m_LocalPosition: {x: 0.08, y: -2.76, z: 0}
   m_LocalScale: {x: 0.3601, y: 0.3601, z: 0.3601}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1431,24 +1451,27 @@ MonoBehaviour:
     - Uncle Kang
     - Mama Kang
     - Mama Kang
-    - 
-    - 
+    - Joey Kang
+    - Joey Kang
+    - Uncle Kang
     - <CHOICE>
     sentences:
     - The grass really is greener over here
     - No kidding, it sounds delicious.
     - It sure helped Joey grow up fast.
     - Hey Joey, why don't you talk to Uncle Kang for a bit while I find your father.
-    - Hi Uncle
+    - Okay sure.
+    - Hi Uncle.
     - Hey kid. My how you've grown! What have you been up to?
     - Dad lost his Job^I've been well
     timestamps:
+    - 0.33
     - 0
     - 0
     - 0
+    - 0.93
     - 0
-    - 0
-    - 0
+    - 0.25
     - 0
   cutsceneTimeline: {fileID: 11400000, guid: 58ec6195794353e40a2dc1253897edd7, type: 2}
 --- !u!1 &1292749049
@@ -1700,6 +1723,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1954593870}
   - component: {fileID: 1954593869}
+  - component: {fileID: 1954593872}
+  - component: {fileID: 1954593871}
   m_Layer: 0
   m_Name: Can
   m_TagString: Untagged
@@ -1772,6 +1797,55 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1954593871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954593868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: f0af225d55753dc46b55fa3fcc051940, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1954593872}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: CanTalkingLeft
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!95 &1954593872
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954593868}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c593f588348480246b7ddd509f577e44, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &2025095394 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2072151046503257855, guid: 1e743b485c13fee4098a594f962662dc, type: 3}
@@ -1904,7 +1978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 84
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[9].key
@@ -2109,7 +2183,19 @@ PrefabInstance:
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[84].key
       value: 
-      objectReference: {fileID: -225125712393304626, guid: 58ec6195794353e40a2dc1253897edd7, type: 2}
+      objectReference: {fileID: -9136347040353850237, guid: 58ec6195794353e40a2dc1253897edd7, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[85].key
+      value: 
+      objectReference: {fileID: 664086199020875938, guid: 58ec6195794353e40a2dc1253897edd7, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[86].key
+      value: 
+      objectReference: {fileID: 8030531985835764330, guid: 58ec6195794353e40a2dc1253897edd7, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[87].key
+      value: 
+      objectReference: {fileID: -6958928003312854642, guid: 58ec6195794353e40a2dc1253897edd7, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
@@ -2425,7 +2511,19 @@ PrefabInstance:
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[84].value
       value: 
-      objectReference: {fileID: 455891760}
+      objectReference: {fileID: 1954593872}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[85].value
+      value: 
+      objectReference: {fileID: 1954593871}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[86].value
+      value: 
+      objectReference: {fileID: 110329040}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[87].value
+      value: 
+      objectReference: {fileID: 110329040}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.data[0].second
       value: 
