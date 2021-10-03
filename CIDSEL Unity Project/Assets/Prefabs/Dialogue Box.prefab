@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -5.2429, y: 160.8543}
+  m_AnchoredPosition: {x: -0.000015259, y: 1286}
   m_SizeDelta: {x: 1289.4481, y: 385.8678}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &785073300480188776
@@ -72,8 +72,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 29.999, y: 54}
   m_SizeDelta: {x: 630.267, y: 127.7116}
+=======
+  m_AnchoredPosition: {x: 29.999, y: 46}
+  m_SizeDelta: {x: 623.9727, y: 121.1293}
+>>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &785073300480188783
 CanvasRenderer:
@@ -105,7 +110,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: fb64e403409b74b46a3f30178c863d16, type: 3}
+<<<<<<< Updated upstream
     m_FontSize: 37
+=======
+    m_FontSize: 35
+>>>>>>> Stashed changes
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -115,7 +124,11 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
+<<<<<<< Updated upstream
     m_LineSpacing: 0.75
+=======
+    m_LineSpacing: 0.8
+>>>>>>> Stashed changes
   m_Text: 'Text Text Text
 
     Text Text
