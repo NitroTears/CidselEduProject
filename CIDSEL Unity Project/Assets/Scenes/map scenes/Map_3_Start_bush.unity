@@ -1064,7 +1064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994f8c4d78d43ba4faab91951dc32443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newScene: Scene 3
+  newScene: Scene 4
   inUse: 1
 --- !u!58 &1799227526
 CircleCollider2D:

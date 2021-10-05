@@ -299,7 +299,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &110329040
 Animator:
@@ -530,6 +530,7 @@ GameObject:
   - component: {fileID: 401732936}
   - component: {fileID: 401732935}
   - component: {fileID: 401732934}
+  - component: {fileID: 401732937}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -601,7 +602,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1082940994}
+      - m_Target: {fileID: 401732937}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -651,6 +652,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 401732932}
   m_CullTransparentMesh: 1
+--- !u!114 &401732937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401732932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a15b59247511142abab9efc6d98ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Mama Kang
+    - Uncle Kang
+    - Mama Kang
+    - Mama Kang
+    - Joey Kang
+    - Joey Kang
+    - Uncle Kang
+    - <CHOICE>
+    sentences:
+    - The grass really is greener over here
+    - No kidding, it sounds delicious.
+    - It sure helped Joey grow up fast.
+    - Hey Joey, why don't you talk to Uncle Kang for a bit while I find your father.
+    - Okay sure.
+    - Hi Uncle.
+    - Hey kid. My how you've grown! What have you been up to?
+    - Dad lost his Job^I've been well
+    timestamps:
+    - 0.33
+    - 0
+    - 0
+    - 0
+    - 0.93
+    - 0
+    - 0.25
+    - 0
+  cutsceneTimeline: {fileID: 11400000, guid: 58ec6195794353e40a2dc1253897edd7, type: 2}
 --- !u!114 &402044996 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 785073300480188782, guid: e37a296d2732b414495337fe1a093dc6, type: 3}
@@ -758,7 +800,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455891756}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.17, y: -1.8000001, z: -1}
   m_LocalScale: {x: 0.2949, y: 0.2949, z: 0.2949}
   m_Children: []
@@ -1013,21 +1055,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Joey
-    - Joey
-    - Alex
-    - Alex
+    - Joey Kang
+    - Uncle Kang
+    - Papa Kang
+    - Papa Kang
+    - Joey Kang
+    - Mama Kang
+    - Joey Kang
+    - Papa Kang
+    - Papa Kang
     sentences:
-    - 'Is that really true? I''ve heard anything about them being slimy before. '
-    - I wonder who put this poster up?
-    - No idea. Come on, we should keep going.
-    - No idea. Come on, we should keep going.
+    - Everything is going well, like Mama said he grass has been great.
+    - Maybe I should come over to try it sometime! Well take care Joey, bye bye!
+    - Hey Joey, I noticed you didn't tell Uncle Kang that I lost my job the other
+      day.
+    - I want to thank you for that, I wasn't ready to tell him since I know he would
+      go on about it for a while.
+    - I wasn't sure if you wanted him to know, so I didn't say anything.
+    - Well done Joey. You need to be careful sharing things on through the can, and
+      I'm happy you understand that.
+    - Thanks Mama.
+    - Well you better head off to school now Joey.
+    - Well you better head off to school now Joey.
     timestamps:
-    - 0.3
+    - 0.25
+    - 1
+    - 0.5
     - 0
     - 0
-    - 0.3
-  cutsceneTimeline: {fileID: 11400000, guid: 17d06890d88eea747bb0ba59f41140fe, type: 2}
+    - 0
+    - 0
+    - 0
+    - 0.25
+  cutsceneTimeline: {fileID: 11400000, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
 --- !u!95 &845152240
 Animator:
   serializedVersion: 3
@@ -1085,19 +1145,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Joey
-    - Alex
-    - Alex
+    - Joey Kang
+    - Uncle Kang
+    - Uncle Kang
+    - Papa Kang
+    - Uncle Kang
+    - Papa Kang
+    - Papa Kang
+    - Joey Kang
+    - Papa Kang
+    - Papa Kang
+    - Papa Kang
+    - Mama Kang
+    - Mama Kang
     sentences:
-    - Really? I suppose if there is a warning poster about it, it must be true. That's
-      pretty gross.
-    - Sure is. Come on, let's get going.
-    - Sure is. Come on, let's get going.
+    - Dad lost his job the other day, he told Mama about it. They were really upset.
+    - What?! Oh dear that's terrible! Is he there? Put him on!
+    - You lost your job? Why didn't you tell me? I'm going to help you find a new
+      one.
+    - Thanks for the offer, but I'm going to trying finding one myself first.
+    - Come on Kang I'm trying to help you. Your going to be stuck without a job for
+      months!
+    - Perhaps, but I think it's important that I at least try myself first before
+      asking for help.
+    - Joey, did you tell Uncle Kang that I lost my job?
+    - Yes Papa.
+    - I wanted to keep that to myself Joey.
+    - I know that Uncle Kang means well, but he is going to talk about it non-stop
+      until I do get another job.
+    - I'm a bit disappointed you didn't consider what you say to others using the
+      can.
+    - You should head off to school now Joey, just watch what you say in the future.
+    - You should head off to school now Joey, just watch what you say in the future.
     timestamps:
     - 0.25
+    - 1
+    - 0.75
     - 0
-    - 0.33
-  cutsceneTimeline: {fileID: 11400000, guid: 17d06890d88eea747bb0ba59f41140fe, type: 2}
+    - 0
+    - 0
+    - 0.5
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0.25
+  cutsceneTimeline: {fileID: 11400000, guid: 3daf9c5e678746349aead73f43380908, type: 2}
 --- !u!1001 &938117198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1334,11 +1428,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955173143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08, y: -2.76, z: 0}
+  m_LocalPosition: {x: 0.08, y: -2.76, z: 0.1}
   m_LocalScale: {x: 0.3601, y: 0.3601, z: 0.3601}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &955173146
 MonoBehaviour:
@@ -1456,7 +1550,7 @@ MonoBehaviour:
     - Uncle Kang
     - <CHOICE>
     sentences:
-    - The grass really is greener over here
+    - The grass really is greener over here.
     - No kidding, it sounds delicious.
     - It sure helped Joey grow up fast.
     - Hey Joey, why don't you talk to Uncle Kang for a bit while I find your father.
@@ -1795,7 +1889,7 @@ Transform:
   m_LocalScale: {x: 0.25479537, y: 0.25479537, z: 0.25479537}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1954593871
 MonoBehaviour:
@@ -1961,6 +2055,154 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2071047679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2071047683}
+  - component: {fileID: 2071047682}
+  - component: {fileID: 2071047681}
+  - component: {fileID: 2071047680}
+  m_Layer: 0
+  m_Name: PapaKang
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2071047680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071047679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: f0af225d55753dc46b55fa3fcc051940, type: 2}
+    - {fileID: 11400000, guid: b6abcb21b8810cc4c866c2bb2a2def27, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2071047681}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: PapaKangIdleLeft
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2071047681}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: PapaKangIdleRight
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!95 &2071047681
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071047679}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7aad25b7050e3ee4db91b4ef1540aa6c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &2071047682
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071047679}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -5948669780920569590, guid: 269aad09f6688d546b22e5917a8b7d8f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10.242501, y: 10.24}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &2071047683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071047679}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.7, y: -2.65, z: 0}
+  m_LocalScale: {x: 0.38146237, y: 0.38146237, z: 0.38146237}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2566834376871580690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1971,14 +2213,14 @@ PrefabInstance:
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_PlayableAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 58ec6195794353e40a2dc1253897edd7, type: 2}
+      objectReference: {fileID: 11400000, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_DirectorUpdateMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 88
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[9].key
@@ -2197,9 +2439,137 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6958928003312854642, guid: 58ec6195794353e40a2dc1253897edd7, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[88].key
+      value: 
+      objectReference: {fileID: -5358301141371027309, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[89].key
+      value: 
+      objectReference: {fileID: 91495707961039049, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[90].key
+      value: 
+      objectReference: {fileID: -6150612432181644197, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[91].key
+      value: 
+      objectReference: {fileID: -517960524913067931, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[92].key
+      value: 
+      objectReference: {fileID: -7196110844350998299, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[93].key
+      value: 
+      objectReference: {fileID: -1520331654632331133, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[94].key
+      value: 
+      objectReference: {fileID: -4608904626332533543, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[95].key
+      value: 
+      objectReference: {fileID: 2032700954901419014, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[96].key
+      value: 
+      objectReference: {fileID: -225125712393304626, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[97].key
+      value: 
+      objectReference: {fileID: -6958928003312854642, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[98].key
+      value: 
+      objectReference: {fileID: 8030531985835764330, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[99].key
+      value: 
+      objectReference: {fileID: -9136347040353850237, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
       objectReference: {fileID: 455891757}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[100].key
+      value: 
+      objectReference: {fileID: 664086199020875938, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[101].key
+      value: 
+      objectReference: {fileID: 8021582782534546240, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[102].key
+      value: 
+      objectReference: {fileID: 643196134223282812, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[103].key
+      value: 
+      objectReference: {fileID: 5759742821428548896, guid: 3daf9c5e678746349aead73f43380908, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[104].key
+      value: 
+      objectReference: {fileID: -5358301141371027309, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[105].key
+      value: 
+      objectReference: {fileID: 91495707961039049, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[106].key
+      value: 
+      objectReference: {fileID: -6150612432181644197, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[107].key
+      value: 
+      objectReference: {fileID: -517960524913067931, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[108].key
+      value: 
+      objectReference: {fileID: -7196110844350998299, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[109].key
+      value: 
+      objectReference: {fileID: -1520331654632331133, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[110].key
+      value: 
+      objectReference: {fileID: -4608904626332533543, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[111].key
+      value: 
+      objectReference: {fileID: 2032700954901419014, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[112].key
+      value: 
+      objectReference: {fileID: -225125712393304626, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[113].key
+      value: 
+      objectReference: {fileID: -6958928003312854642, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[114].key
+      value: 
+      objectReference: {fileID: 8030531985835764330, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[115].key
+      value: 
+      objectReference: {fileID: -9136347040353850237, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[116].key
+      value: 
+      objectReference: {fileID: 664086199020875938, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[117].key
+      value: 
+      objectReference: {fileID: 8021582782534546240, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[118].key
+      value: 
+      objectReference: {fileID: 643196134223282812, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[119].key
+      value: 
+      objectReference: {fileID: 5759742821428548896, guid: 08671a2e09bb0794a8eeb479e1a32d1a, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].value
       value: 
@@ -2525,6 +2895,134 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 110329040}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[88].value
+      value: 
+      objectReference: {fileID: 455891757}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[89].value
+      value: 
+      objectReference: {fileID: 455891757}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[90].value
+      value: 
+      objectReference: {fileID: 455891760}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[91].value
+      value: 
+      objectReference: {fileID: 1075468472}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[92].value
+      value: 
+      objectReference: {fileID: 866841122}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[93].value
+      value: 
+      objectReference: {fileID: 845152240}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[94].value
+      value: 
+      objectReference: {fileID: 955173147}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[95].value
+      value: 
+      objectReference: {fileID: 955173147}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[96].value
+      value: 
+      objectReference: {fileID: 955173146}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[97].value
+      value: 
+      objectReference: {fileID: 110329040}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[98].value
+      value: 
+      objectReference: {fileID: 110329040}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[99].value
+      value: 
+      objectReference: {fileID: 1954593872}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[100].value
+      value: 
+      objectReference: {fileID: 1954593871}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[101].value
+      value: 
+      objectReference: {fileID: 2071047681}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[102].value
+      value: 
+      objectReference: {fileID: 2071047681}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[103].value
+      value: 
+      objectReference: {fileID: 2071047680}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[104].value
+      value: 
+      objectReference: {fileID: 455891757}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[105].value
+      value: 
+      objectReference: {fileID: 455891757}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[106].value
+      value: 
+      objectReference: {fileID: 455891760}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[107].value
+      value: 
+      objectReference: {fileID: 1075468472}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[108].value
+      value: 
+      objectReference: {fileID: 866841122}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[109].value
+      value: 
+      objectReference: {fileID: 845152240}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[110].value
+      value: 
+      objectReference: {fileID: 955173147}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[111].value
+      value: 
+      objectReference: {fileID: 955173147}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[112].value
+      value: 
+      objectReference: {fileID: 955173146}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[113].value
+      value: 
+      objectReference: {fileID: 110329040}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[114].value
+      value: 
+      objectReference: {fileID: 110329040}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[115].value
+      value: 
+      objectReference: {fileID: 1954593872}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[116].value
+      value: 
+      objectReference: {fileID: 1954593871}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[117].value
+      value: 
+      objectReference: {fileID: 2071047681}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[118].value
+      value: 
+      objectReference: {fileID: 2071047681}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[119].value
+      value: 
+      objectReference: {fileID: 2071047680}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.data[0].second
       value: 
       objectReference: {fileID: 455891756}
@@ -2542,7 +3040,7 @@ PrefabInstance:
       objectReference: {fileID: 2025095394}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: mapToWarpTo
-      value: Map_2_Start_Tree
+      value: Map_3_Start_bush
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: playTrigger

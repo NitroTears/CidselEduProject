@@ -11,5 +11,10 @@ public class PersistantData : MonoBehaviour
 {
     public static bool isBitten;
     public static bool befriendedSpiky;
+    public static bool Scene1RightChoice;
+    public static bool Scene2RightChoice;
+    public static bool Scene3RightChoice;
+    public static bool Scene4RightChoice;
+    public static bool Scene5RightChoice;
 
 }
