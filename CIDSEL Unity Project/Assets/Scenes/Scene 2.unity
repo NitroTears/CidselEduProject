@@ -943,6 +943,7 @@ MonoBehaviour:
     - Papa
     - Joey
     - Papa
+    - Papa
     - Joey
     - Papa
     sentences:
@@ -960,8 +961,9 @@ MonoBehaviour:
     - "What are you doing going this far away from home? You don\u2019t know what
       could have happened, im sure your mum is worried sick!"
     - "But you are here now, aren\u2019t you?"
-    - You're very lucky I found you, you should have waited at home. If you wanted
-      to come out to the watering hole you should have checked
+    - You're very lucky I found you, you should have waited at home.
+    - If you wanted to come out to the watering hole you should have checked with
+      us.
     - "But you and Mama weren\u2019t home, I didn\u2019t know where you were. I\u2019m
       sorry Papa, I won\u2019t do it again."
     - "It\u2019s okay, just make sure you ask us if you want to go somewhere first."
@@ -972,6 +974,7 @@ MonoBehaviour:
     - 0
     - 0
     - 0
+    - 0.5
     - 0
     - 0
     - 0
@@ -1514,8 +1517,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315704209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.99, y: -2.18, z: 0}
-  m_LocalScale: {x: 0.468, y: 0.468, z: 0.468}
+  m_LocalPosition: {x: -10.9806, y: -2.9106, z: 0}
+  m_LocalScale: {x: 0.36379224, y: 0.36379224, z: 0.36379224}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -1871,6 +1874,7 @@ GameObject:
   - component: {fileID: 2032152191}
   - component: {fileID: 2032152190}
   - component: {fileID: 2032152189}
+  - component: {fileID: 2032152192}
   m_Layer: 0
   m_Name: SteveSalty
   m_TagString: Untagged
@@ -1956,12 +1960,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032152188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.48, y: -0.5, z: 0}
-  m_LocalScale: {x: 0.8661, y: 0.8661, z: 0.8661}
+  m_LocalPosition: {x: 8.85, y: -1.5266, z: 0}
+  m_LocalScale: {x: 0.68326634, y: 0.68326634, z: 0.68326634}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2032152192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032152188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals: []
+    m_Events: []
 --- !u!1 &2059485562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2079,7 +2098,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: c4024ff96046b5f47a98b302483990a0, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 84
+      value: 87
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[9].key
@@ -2281,6 +2300,18 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[83].key
       value: 
       objectReference: {fileID: 8201483277051158759, guid: c4024ff96046b5f47a98b302483990a0, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[84].key
+      value: 
+      objectReference: {fileID: -6911250972634115147, guid: c4024ff96046b5f47a98b302483990a0, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[85].key
+      value: 
+      objectReference: {fileID: 1720874861102740841, guid: c4024ff96046b5f47a98b302483990a0, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[86].key
+      value: 
+      objectReference: {fileID: 5699687888283034379, guid: c4024ff96046b5f47a98b302483990a0, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
@@ -2609,6 +2640,18 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[83].value
       value: 
       objectReference: {fileID: 1572530775}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[84].value
+      value: 
+      objectReference: {fileID: 2032152189}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[85].value
+      value: 
+      objectReference: {fileID: 2032152189}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[86].value
+      value: 
+      objectReference: {fileID: 2032152192}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.data[0].second
       value: 
