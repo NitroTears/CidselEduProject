@@ -592,7 +592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &746700140
 RectTransform:
   m_ObjectHideFlags: 0
@@ -853,26 +853,30 @@ MonoBehaviour:
     - Papa
     - Joey
     - Papa
+    - Papa
     sentences:
     - "I\u2019d sure like too, but I should wait until my parents get home so I can
       ask them to go."
-    - Okay, call me back when you want to hang out!
-    - Im home!!!
+    - Of course, call me back when you want to hang out!
+    - Okay, will do.
+    - I'm home!
     - Hi, I spoke with someone through the tincan and they want to meet me at the
       watering hole in New South Wales.
     - "Oh that sounds like it could be fun, we\u2019ll go there with you. Who did
       you speak to on the tincan?"
     - "I\u2019m not sure, but I can find him again if you want to talk to him."
-    - "Sure, I\u2019ll talk to him."
+    - "Sure, I\u2019ll talk to him. I'll arrange for you and him to hang out another
+      day sometime."
     timestamps:
-    - 1
-    - 1
-    - 1
-    - 0.5
-    - 0.5
-    - 0.5
-    - 0.5
-  cutsceneTimeline: {fileID: 11400000, guid: 8a234f5f6c49e6f4da9228ca996315fd, type: 2}
+    - 0.25
+    - 0
+    - 0
+    - 0.75
+    - 0
+    - 0
+    - 0
+    - 0
+  cutsceneTimeline: {fileID: 11400000, guid: 71dfa49f53cf58b41a6b493a74681635, type: 2}
 --- !u!95 &845152240
 Animator:
   serializedVersion: 3
@@ -959,7 +963,7 @@ MonoBehaviour:
     - Is this your dad?
     - Yeah he is.
     - "What are you doing going this far away from home? You don\u2019t know what
-      could have happened, im sure your mum is worried sick!"
+      could have happened!"
     - "But you are here now, aren\u2019t you?"
     - You're very lucky I found you, you should have waited at home.
     - If you wanted to come out to the watering hole you should have checked with
@@ -1282,7 +1286,7 @@ MonoBehaviour:
     - Steve Salty
     - <CHOICE>
     sentences:
-    - Hmm? Mama? Papa? Where are you ?
+    - Hmm? Mama? Papa? Where are you?
     - Oh Maybe someone on the line can help me!
     - Hello? Mama? Papa? Are You There? Can anyone Hear me?
     - Eh? Who is this?
@@ -1306,7 +1310,7 @@ MonoBehaviour:
     - 0.5
     - 0.5
     - 0.5
-    - 0.8
+    - 0.9
     - 0
   cutsceneTimeline: {fileID: 11400000, guid: e7ca131692b6f0c4686446c20fc8ab44, type: 2}
 --- !u!1 &1292749049
@@ -2095,10 +2099,10 @@ PrefabInstance:
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_PlayableAsset
       value: 
-      objectReference: {fileID: 11400000, guid: c4024ff96046b5f47a98b302483990a0, type: 2}
+      objectReference: {fileID: 11400000, guid: e7ca131692b6f0c4686446c20fc8ab44, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 87
+      value: 98
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[9].key
@@ -2312,6 +2316,50 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[86].key
       value: 
       objectReference: {fileID: 5699687888283034379, guid: c4024ff96046b5f47a98b302483990a0, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[87].key
+      value: 
+      objectReference: {fileID: -5358301141371027309, guid: 71dfa49f53cf58b41a6b493a74681635, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[88].key
+      value: 
+      objectReference: {fileID: 91495707961039049, guid: 71dfa49f53cf58b41a6b493a74681635, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[89].key
+      value: 
+      objectReference: {fileID: -6150612432181644197, guid: 71dfa49f53cf58b41a6b493a74681635, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[90].key
+      value: 
+      objectReference: {fileID: -517960524913067931, guid: 71dfa49f53cf58b41a6b493a74681635, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[91].key
+      value: 
+      objectReference: {fileID: -7196110844350998299, guid: 71dfa49f53cf58b41a6b493a74681635, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[92].key
+      value: 
+      objectReference: {fileID: -1520331654632331133, guid: 71dfa49f53cf58b41a6b493a74681635, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[93].key
+      value: 
+      objectReference: {fileID: -6196420250919638508, guid: 71dfa49f53cf58b41a6b493a74681635, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[94].key
+      value: 
+      objectReference: {fileID: 832049749027430659, guid: 71dfa49f53cf58b41a6b493a74681635, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[95].key
+      value: 
+      objectReference: {fileID: 4097659206550135077, guid: 71dfa49f53cf58b41a6b493a74681635, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[96].key
+      value: 
+      objectReference: {fileID: -3802649135295935435, guid: 71dfa49f53cf58b41a6b493a74681635, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[97].key
+      value: 
+      objectReference: {fileID: 5999447233104392091, guid: 71dfa49f53cf58b41a6b493a74681635, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
@@ -2652,6 +2700,50 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[86].value
       value: 
       objectReference: {fileID: 2032152192}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[87].value
+      value: 
+      objectReference: {fileID: 455891757}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[88].value
+      value: 
+      objectReference: {fileID: 455891757}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[89].value
+      value: 
+      objectReference: {fileID: 455891760}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[90].value
+      value: 
+      objectReference: {fileID: 1075468472}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[91].value
+      value: 
+      objectReference: {fileID: 866841122}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[92].value
+      value: 
+      objectReference: {fileID: 845152240}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[93].value
+      value: 
+      objectReference: {fileID: 1887501356}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[94].value
+      value: 
+      objectReference: {fileID: 1887501356}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[95].value
+      value: 
+      objectReference: {fileID: 1887501355}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[96].value
+      value: 
+      objectReference: {fileID: 1315704211}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[97].value
+      value: 
+      objectReference: {fileID: 1315704211}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.data[0].second
       value: 
