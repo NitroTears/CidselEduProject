@@ -89,7 +89,7 @@ public class DialogueManager : MonoBehaviour
         }
         DialogueStarted = true;
         DisplayNextSentence(true);
-        
+
     }
 
     public void DisplayNextSentence(bool isfirstLine)
@@ -138,7 +138,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("End of conversation.");
         director.Stop();
     }
-    
+
     public void EndScene()
     {
         SceneManager.LoadScene(mapToWarpTo);
@@ -156,6 +156,36 @@ public class DialogueManager : MonoBehaviour
         {
             ButtonDelayTime = 0;
             ButtonJustPressed = false;
+        }
+    }
+
+    public void SetPersistentData(int sceneNumber)
+    {
+        switch (sceneNumber)
+        {
+            case 1:
+                PersistantData.scn1Choice = true;
+                break;
+            case 2:
+                PersistantData.scn2Choice = true;
+                break;
+            case 3:
+                PersistantData.scn3Choice = true;
+                break;
+            case 4:
+                PersistantData.scn4Choice = true;
+                break;
+            case 5:
+                PersistantData.scn5Choice = true;
+                break;
+            case 6:
+                PersistantData.scn6Choice = true;
+                break;
+            case 7:
+                PersistantData.scn7Choice = true;
+                break;
+            default:
+                break;
         }
     }
 

@@ -826,6 +826,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 65b7f2bad6ccb1f40a0046f17da9e62a, type: 2}
     - {fileID: 11400000, guid: 38dd735c124c51843b72c2a3486054ff, type: 2}
     - {fileID: 11400000, guid: fafe45a2a36565f499fdfade4c7586b0, type: 2}
+    - {fileID: 11400000, guid: fb03bfe57e523ee439b7811a39443a8c, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -885,6 +886,20 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls: []
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2566834376871580691}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: SetPersistentData
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!224 &663766027 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 785073300435519614, guid: e37a296d2732b414495337fe1a093dc6, type: 3}
@@ -1532,8 +1547,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 181.26, y: -171.78}
-  m_SizeDelta: {x: 328.03, y: 74.2403}
+  m_AnchoredPosition: {x: 171, y: -171.78}
+  m_SizeDelta: {x: 190.6365, y: 74.2403}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995347386
 MonoBehaviour:
@@ -2293,7 +2308,7 @@ PrefabInstance:
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_PlayableAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 58ec6195794353e40a2dc1253897edd7, type: 2}
+      objectReference: {fileID: 11400000, guid: 3daf9c5e678746349aead73f43380908, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_DirectorUpdateMode
       value: 1
@@ -3120,11 +3135,11 @@ PrefabInstance:
       objectReference: {fileID: 2025095394}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: mapToWarpTo
-      value: Scene 4
+      value: Scene 2
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: playTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: charNameText

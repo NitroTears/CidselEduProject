@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StarRender : MonoBehaviour
 {
     // The specific choice number this star represents.
-    public SpriteRenderer sprRenderer;
+    private Image spr; //The image being rendered ingame
     public byte starNumber;
     public Sprite starOn;
     public Sprite starOff;
     // Start is called before the first frame update
     void Start()
     {
-        sprRenderer = GetComponent<SpriteRenderer>();
+        spr = GetComponent<Image>();
         RenderStars();
     }
 
@@ -36,18 +37,24 @@ public class StarRender : MonoBehaviour
             case 5:
                 turnOnStar = PersistantData.scn5Choice;
                 break;
+            case 6:
+                turnOnStar = PersistantData.scn6Choice;
+                break;
+            case 7:
+                turnOnStar = PersistantData.scn7Choice;
+                break;
             default:
                 turnOnStar = false;
                 break;
         }
         if (turnOnStar)
         {
-            sprRenderer.sprite = starOn;
+            spr.sprite = starOn;
         }
         else
         {
-            sprRenderer.sprite = starOff;
+            spr.sprite = starOff;
         }
     }
-    
+
 }

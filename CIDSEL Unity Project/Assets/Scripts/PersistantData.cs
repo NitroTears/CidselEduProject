@@ -15,4 +15,6 @@ public class PersistantData : MonoBehaviour
     public static bool scn3Choice;
     public static bool scn4Choice;
     public static bool scn5Choice;
+    public static bool scn6Choice;
+    public static bool scn7Choice;
 }

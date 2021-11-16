@@ -5,28 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Luke's Dialogue Test.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Scene 0 (Intro).unity
     guid: 94bb3d172af5d0c4fa7e3155a967004e
-  - enabled: 0
-    path: Assets/Scenes/map scenes/scene files/Map_Navigation_scene.unity
-    guid: b97eacb9fbc281949a71632cf308fa1e
   - enabled: 1
-    path: Assets/Scenes/map scenes/Map_1.unity
+    path: Assets/Scenes/MapScenes/Map_0.unity
     guid: 1ad9c4bbd89ceeb4f980f8d40292307d
   - enabled: 1
-    path: Assets/Scenes/map scenes/Map_2.unity
+    path: Assets/Scenes/MapScenes/Map_3.unity
     guid: 694545d131b19284092c8937b731fef4
   - enabled: 1
-    path: Assets/Scenes/map scenes/Map_3.unity
+    path: Assets/Scenes/MapScenes/Map_2.unity
     guid: 4f7a84f0ce813ea43970a0469f50eba7
   - enabled: 1
-    path: Assets/Scenes/Scene 4.unity
+    path: Assets/Scenes/Scene 3.unity
     guid: d403912cabbc15a41b5c0b3914386384
   - enabled: 1
     path: Assets/Scenes/Scene 2.unity
     guid: 96221ba767cae53438df4b980b5988dc
+  - enabled: 1
+    path: Assets/Scenes/Start_Screen.unity
+    guid: 0bfc9425a5d663c41a9fbd1c6e6f5999
+  - enabled: 1
+    path: Assets/Scenes/Scene 1.unity
+    guid: f611fac6bb5623446b8f38cc933540e9
   m_configObjects: {}
