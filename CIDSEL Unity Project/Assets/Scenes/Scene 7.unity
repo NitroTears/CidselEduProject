@@ -724,7 +724,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 5426617006344379208, guid: 4a2462025958e75439d9d6c05533d4ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1831,7 +1831,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 6117933636879953998, guid: 4f9a6df80c9a6f14bbbf373cc5c5a43a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3403,7 +3403,7 @@ PrefabInstance:
       objectReference: {fileID: 2025095394}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: mapToWarpTo
-      value: Scene 7
+      value: Map 4
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: playTrigger
@@ -3504,6 +3504,10 @@ PrefabInstance:
     - target: {fileID: 2566834377571783623, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566834377571783623, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783623, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
