@@ -1066,7 +1066,7 @@ MonoBehaviour:
     - 0.3
     - 0
     - 0
-    - 0.3
+    - 0
   cutsceneTimeline: {fileID: 11400000, guid: 17d06890d88eea747bb0ba59f41140fe, type: 2}
 --- !u!95 &845152240
 Animator:
