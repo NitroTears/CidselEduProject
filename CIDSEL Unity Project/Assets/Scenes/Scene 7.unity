@@ -615,22 +615,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - 
     - Sheila
     - Joey
     - Delilah
     - Burra
     - <CHOICE>
     sentences:
-    - 
     - You know I'm not slimy...right, Joey?
     - Yeah. I know.
     - Hey, hey, HEY. I know snakes are slimy. I don't care what you say!
     - If you play with her, you're slimy too, and we won't play with you either!
     - You're wrong^Ummm
     timestamps:
-    - 1
-    - 1
+    - 2
     - 1
     - 1.5
     - 1
@@ -771,6 +768,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: fafe45a2a36565f499fdfade4c7586b0, type: 2}
     - {fileID: 11400000, guid: fb03bfe57e523ee439b7811a39443a8c, type: 2}
     - {fileID: 0}
+    - {fileID: 11400000, guid: cbab038f6661a90449c1ae0faf20ce59, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -846,6 +844,20 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls: []
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 455891757}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: JoeyKangHoppingLeft
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!224 &663766027 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 785073300435519614, guid: e37a296d2732b414495337fe1a093dc6, type: 3}
@@ -1020,13 +1032,13 @@ MonoBehaviour:
     - Sheila
     - Burra
     - Joey
-    - 
+    - Sheila
     sentences:
     - Urmmmmmm
     - Come on Joey
     - What? Are you going to be slimy, or not?
     - Sorry Sheila
-    - 
+    - (cries)
     timestamps:
     - 1
     - 1
@@ -1663,6 +1675,7 @@ GameObject:
   - component: {fileID: 1940209579}
   - component: {fileID: 1940209578}
   - component: {fileID: 1940209577}
+  - component: {fileID: 1940209580}
   m_Layer: 0
   m_Name: DelilahDingo
   m_TagString: Untagged
@@ -1754,6 +1767,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1940209580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940209576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: b6abcb21b8810cc4c866c2bb2a2def27, type: 2}
+    - {fileID: 11400000, guid: f0af225d55753dc46b55fa3fcc051940, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1940209577}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: DelilahIdleRight
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1940209577}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: DelilahIdleLeft
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1992041223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,8 +1928,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Events:
-    m_Signals: []
-    m_Events: []
+    m_Signals:
+    - {fileID: 11400000, guid: f0af225d55753dc46b55fa3fcc051940, type: 2}
+    - {fileID: 0}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1992041224}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1992041224}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2004782744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,14 +2172,14 @@ PrefabInstance:
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_PlayableAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 737fa9e9181d23542a7ecbfe02b5595a, type: 2}
+      objectReference: {fileID: 11400000, guid: 8de54fa62c634e546bbe23701516afd9, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_DirectorUpdateMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 186
+      value: 198
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[9].key
@@ -2705,6 +2793,54 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[185].key
       value: 
       objectReference: {fileID: -1773010165638927857, guid: 8de54fa62c634e546bbe23701516afd9, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[186].key
+      value: 
+      objectReference: {fileID: -8177040766407116926, guid: 737fa9e9181d23542a7ecbfe02b5595a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[187].key
+      value: 
+      objectReference: {fileID: 6035122609490865414, guid: 737fa9e9181d23542a7ecbfe02b5595a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[188].key
+      value: 
+      objectReference: {fileID: 6218262510735866891, guid: af497afd20458c7459060cbbad7f1db6, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[189].key
+      value: 
+      objectReference: {fileID: -1077977293036931562, guid: af497afd20458c7459060cbbad7f1db6, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[190].key
+      value: 
+      objectReference: {fileID: 3390868761366489379, guid: af497afd20458c7459060cbbad7f1db6, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[191].key
+      value: 
+      objectReference: {fileID: 1607408251193138596, guid: af497afd20458c7459060cbbad7f1db6, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[192].key
+      value: 
+      objectReference: {fileID: 3194273971278496610, guid: 737fa9e9181d23542a7ecbfe02b5595a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[193].key
+      value: 
+      objectReference: {fileID: -4193090822145322806, guid: 737fa9e9181d23542a7ecbfe02b5595a, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[194].key
+      value: 
+      objectReference: {fileID: -9200949396044549934, guid: 8de54fa62c634e546bbe23701516afd9, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[195].key
+      value: 
+      objectReference: {fileID: 7390003375065756790, guid: 8de54fa62c634e546bbe23701516afd9, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[196].key
+      value: 
+      objectReference: {fileID: 1610354568871463608, guid: 8de54fa62c634e546bbe23701516afd9, type: 2}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[197].key
+      value: 
+      objectReference: {fileID: 9180839522778950231, guid: 8de54fa62c634e546bbe23701516afd9, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].value
       value: 
@@ -3385,6 +3521,54 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[185].value
       value: 
       objectReference: {fileID: 845152240}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[186].value
+      value: 
+      objectReference: {fileID: 455891760}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[187].value
+      value: 
+      objectReference: {fileID: 1940209580}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[188].value
+      value: 
+      objectReference: {fileID: 455891760}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[189].value
+      value: 
+      objectReference: {fileID: 1992041227}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[190].value
+      value: 
+      objectReference: {fileID: 10194814}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[191].value
+      value: 
+      objectReference: {fileID: 1940209580}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[192].value
+      value: 
+      objectReference: {fileID: 1992041227}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[193].value
+      value: 
+      objectReference: {fileID: 10194814}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[194].value
+      value: 
+      objectReference: {fileID: 455891760}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[195].value
+      value: 
+      objectReference: {fileID: 1992041227}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[196].value
+      value: 
+      objectReference: {fileID: 10194814}
+    - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
+      propertyPath: m_SceneBindings.Array.data[197].value
+      value: 
+      objectReference: {fileID: 1940209580}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.data[0].second
       value: 
