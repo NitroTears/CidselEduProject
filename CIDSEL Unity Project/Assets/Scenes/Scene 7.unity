@@ -2157,7 +2157,7 @@ PrefabInstance:
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_PlayableAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8de54fa62c634e546bbe23701516afd9, type: 2}
+      objectReference: {fileID: 11400000, guid: af497afd20458c7459060cbbad7f1db6, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_DirectorUpdateMode
       value: 1
