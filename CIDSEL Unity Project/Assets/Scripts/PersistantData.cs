@@ -17,4 +17,31 @@ public class PersistantData : MonoBehaviour
     public static bool scn5Choice;
     public static bool scn6Choice;
     public static bool scn7Choice;
+
+    public int GetTotalScore()
+    {
+        var totalScore = 0;
+
+        if (scn1Choice)
+        {
+            totalScore += 1;
+        }
+        if (scn2Choice)
+        {
+            totalScore += 1;
+        }
+        if (scn3Choice)
+        {
+            totalScore += 1;
+        }
+        if (scn4Choice)
+        {
+            totalScore += 1;
+        }
+        if (scn5Choice)
+        {
+            totalScore += 1;
+        }
+        return totalScore;
+    }
 }
