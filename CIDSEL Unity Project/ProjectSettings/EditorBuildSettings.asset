@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene 1.unity
     guid: f611fac6bb5623446b8f38cc933540e9
+  - enabled: 1
+    path: Assets/Scenes/EndofGame.unity
+    guid: f07df9dbdcd954540bfd3696fcba5863
+  - enabled: 1
+    path: Assets/Scenes/Scene 8 (Bad).unity
+    guid: a3bf28cfb12a4cb4cbf8b27d823095b4
   m_configObjects: {}
