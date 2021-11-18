@@ -1683,7 +1683,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: e8e0e0a3be55a3645bb05d90ed3abee5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -2084,7 +2084,7 @@ PrefabInstance:
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_PlayableAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8de54fa62c634e546bbe23701516afd9, type: 2}
+      objectReference: {fileID: 11400000, guid: 737fa9e9181d23542a7ecbfe02b5595a, type: 2}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_DirectorUpdateMode
       value: 1
