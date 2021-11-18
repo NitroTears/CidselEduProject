@@ -1319,8 +1319,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 171, y: -171.78}
-  m_SizeDelta: {x: 190.6365, y: 74.2403}
+  m_AnchoredPosition: {x: 179.87, y: -171.78}
+  m_SizeDelta: {x: 208.37, y: 74.2403}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995347386
 MonoBehaviour:
@@ -1406,25 +1406,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    names:
-    - Joey
-    - Bully 1
-    - Bully 2
-    - Shiela
-    - <CHOICE>
-    sentences:
-    - What's going on over here?
-    - Jeez, you snakes are so slimy.
-    - Sheila is a slimy snake!
-    - Can you guys please leave me alone!
-    - Stop that!^Yeah they are
-    timestamps:
-    - 1
-    - 0
-    - 0
-    - 0
-    - 0.5
-  cutsceneTimeline: {fileID: 11400000, guid: af497afd20458c7459060cbbad7f1db6, type: 2}
+    names: []
+    sentences: []
+    timestamps: []
+  cutsceneTimeline: {fileID: 0}
 --- !u!1 &1292749049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2167,7 +2152,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_InitialState
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783616, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: m_PlayableAsset
@@ -3587,7 +3572,7 @@ PrefabInstance:
       objectReference: {fileID: 2025095394}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: mapToWarpTo
-      value: Map 4
+      value: Map_7
       objectReference: {fileID: 0}
     - target: {fileID: 2566834377571783617, guid: b3d6f42742b051d458e5ad4b6f4f60aa, type: 3}
       propertyPath: playTrigger
